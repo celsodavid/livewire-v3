@@ -14,7 +14,9 @@ class Counter extends Component
     }
     public function decrement(): void
     {
-        $this->counter--;
+        if ($this->counter >= 1) {
+            $this->counter--;
+        }
     }
 
     public function render()

@@ -1,6 +1,7 @@
 <div>
-    <h1>Counter</h1>
-    <button type="button" wire:click="decrement">-</button>
-    <h2>{{ $counter }}</h2>
+    <h1>Meu Contador!</h1>
+
     <button type="button" wire:click="increment">+</button>
+    <p>Valor Atual: {{ $counter }}</p>
+    <button type="button" wire:click="decrement">-</button>
 </div>
